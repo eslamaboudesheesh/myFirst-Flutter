@@ -11,7 +11,7 @@ class MyApp extends StatelessWidget {
       // remove debuge mode 
       debugShowCheckedModeBanner: false,
       title: 'Flutter',
-        theme: ThemeData(          // Add the 3 lines from here... 
+        theme: ThemeData(          
         primaryColor: Colors.white,
          ),
       // Scaffold its mataril desggin widgt
@@ -34,7 +34,7 @@ class RandomWordsState extends State<RandomWords> {
   // sugg it's  private array from wordpair package content all item
   final _suggestions = <WordPair>[];
   final _biggerFont = const TextStyle(fontSize: 18.0);
- final Set<WordPair> _saved = Set<WordPair>();   // Add this line.
+ final Set<WordPair> _saved = Set<WordPair>();   
 
 
 // first widget about title and randing listview of item
@@ -75,7 +75,7 @@ class RandomWordsState extends State<RandomWords> {
     return Scaffold(
       appBar: AppBar(
         title: Text('Startup Name Generator'),
-         actions: <Widget>[      // Add 3 lines from here...
+         actions: <Widget>[     
           IconButton(icon: Icon(Icons.list), onPressed: _pushSaved),
         ],  
 
